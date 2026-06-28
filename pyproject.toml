@@ -25,10 +25,14 @@ dependencies = [
     "rich",
 ]
 
+[project.scripts]
+mac-pkg-history = "mac_pkg_history.main:main"
+
+[tool.setuptools.packages.find]
+where = ["."]                
+include = ["mac_pkg_history*"]
+
 [project.urls]
 Homepage = "https://github.com/Yalois/mac-pkg-history"
 Repository = "https://github.com/Yalois/mac-pkg-history"
 Issues = "https://github.com/Yalois/mac-pkg-history/issues"
-
-[project.scripts]
-mac-pkg-history = "mac_pkg_history.main:main"
