@@ -1,14 +1,13 @@
----
-
-# 📦 pkgview – macOS PKG Install History TUI Viewer
+# 📦 mac-pkg-history —— macOS PKG Install History TUI Viewer
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.6+](https://img.shields.io/badge/python-3.6+-blue.svg)](https://www.python.org/downloads/)
 [![macOS](https://img.shields.io/badge/platform-macOS-lightgrey.svg)](https://www.apple.com/macos)
 
-**pkgview** 是一个交互式命令行工具（TUI），用于查看 macOS 上通过 `.pkg` 安装包安装的所有软件及其详细文件清单。它基于系统自带的 `pkgutil` 命令，提供更直观、高效的浏览体验。
+**mac-pkg-history** 是一个交互式命令行工具（TUI），用于查看 macOS 上通过 `.pkg` 安装包安装的所有软件及其详细文件清单。它基于系统自带的 `pkgutil` 命令，提供更直观、高效的浏览体验。
 
 ![image-20260628163038453](https://img.sky233.top/img/2026/06/09af3be103fb875fa2e93f885c27fedc7b6b1afb80ee83cee42c1d13821b69a5.png)
+
 
 ---
 
@@ -34,28 +33,9 @@
 
 ### 安装
 
-1. 克隆仓库：
-   ```bash
-   git clone https://github.com/Yalois/pkgview.git
-   cd pkgview
-   ```
-
-2. 安装 Python 依赖：
-   ```bash
-   pip install rich
-   ```
-
-3. （可选）赋予执行权限并直接运行：
-   ```bash
-   chmod +x pkgview.py
-   ./pkgview.py
-   ```
+`pip install mac-pkg-history`
 
 ### 使用
-
-```bash
-python3 pkgview.py
-```
 
 启动后你会看到所有已安装包的表格。交互操作如下：
 
@@ -91,19 +71,14 @@ python3 pkgview.py
 
 ### 项目结构
 
-```
-pkgview/
-├── pkgview.py          # 主程序
-├── requirements.txt    # 依赖列表
-├── LICENSE             # MIT 许可证
-└── README.md           # 本文件
-```
-
-### 依赖安装
-
-```bash
-pip install -r requirements.txt
-```
+mac-pkg-history/
+├── mac_pkg_history/           
+│   ├── \_\_init\_\_.py
+│   └── main.py                
+├── pyproject.toml
+├── README.md
+├── LICENSE                    
+└── .gitignore
 
 ---
 
