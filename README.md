@@ -69,17 +69,6 @@
 - **subprocess** – 调用系统命令
 - **datetime** – 时间戳转换
 
-### 项目结构
-
-mac-pkg-history/
-├── mac_pkg_history/           
-│   ├── \_\_init\_\_.py
-│   └── main.py                
-├── pyproject.toml
-├── README.md
-├── LICENSE                    
-└── .gitignore
-
 ---
 
 ## 📝 声明
